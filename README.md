@@ -1,24 +1,24 @@
 # Termux Wayland (Linux in your pocket, Wayland in your terminal)
 # com.termux.wayland
-Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies.
 
+ Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies.
 Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet.
 
-✨ Features
-🖥️ Native Wayland graphical session
-⚡ Lightweight and optimized for mobile devices
-📦 Debian/Linux environment with APT
-🔒 Sandboxed, no root required
-⌨️ Keyboard & mouse support
-📱 Touchscreen friendly
-🪟 Dynamic window resizing
-🚀 Hardware accelerated rendering support
-🔧 Simple app launcher system
-🌙 Modern dark UI inspired by Linux desktops
-📸 Preview
-7
+# Features
+Native Wayland graphical session
+Lightweight and optimized for mobile devices
+Real Linux environment with APT
+Sandboxed
+No root required
+Keyboard & mouse support
+Touchscreen friendly
+Dynamic window resizing
+Hardware accelerated rendering support
+Simple app launcher system
+Modern dark UI inspired by Linux desktops
+Preview
 
-Architecture
+# Architecture
 
 Android
  └── Termux
@@ -26,16 +26,19 @@ Android
            └── Weston (Wayland compositor)
                  └── Linux GUI Applications
 
-📦 Included Components
+# 📦 Included Components
 
 Component	Description
 Termux: Android terminal environment
+Debian,Alpine Linux,Manjaro,Ubuntu,...: Linux userspace
+Widgets,apps,Android PIP windows,Android styled like Ubuntu touch & Android
 Weston:	Reference Wayland compositor
-Debian: Linux userspace
+
 XWayland:	Legacy X11 app compatibility
 PulseAudio / PipeWire	Audio support
 Mesa	OpenGL rendering
-🚀 Goals
+
+# 🚀 Goals
 
 The goal of Termux Wayland is to create:
 
@@ -46,7 +49,7 @@ easy to install and maintain,
 developer friendly,
 open-source and customizable.
 
-📱 Why Wayland?
+# Why Wayland?
 
 Compared to traditional X11 environments:
 
@@ -55,18 +58,17 @@ Lower latency	Older architecture
 Better rendering pipeline	More overhead
 More secure	Legacy design
 Better mobile integration	Desktop-first design
-🔧 Installation (WIP)
+
+# Installation (WIP)
+
 pkg update && pkg upgrade
-
 pkg install root-repo x11-repo
-
 pkg install git
-
-git clone https://github.com/YOUR_USERNAME/termux-wayland
-
+git clone https://github.com/brick-linux-designer/termux-wayland
 cd termux-wayland
 
-🧩 Planned Features
+# 🧩 Planned Features
+
  Full launcher UI
  Session manager
  Multi-window support
@@ -77,10 +79,10 @@ cd termux-wayland
  Containerized environments
  XFCE / KDE support
  Automatic setup scripts
-🤝 Contributing
+
+# 🤝 Contributing
 
 Contributions are welcome!
-
 You can help by:
 
 reporting bugs,
@@ -89,26 +91,29 @@ testing on devices,
 contributing code,
 suggesting features.
 
-⭐ Support The Project
+# ⭐ Support The Project
 
 If you like the project:
 
 Give the repository a star ⭐
 Share it with other Linux / Android enthusiasts
 Contribute to development
-📜 License
 
+# 📜 License
 
 MIT License
 
-❤️ Inspired By
+# ❤️ Inspired By
 Termux
 Termux:X11
-Ubuntu Touch
+Ubuntu Touch & Android
+Ubuntu
 Wayland
 Weston
 Debian
-🌍 Vision
+Alpine Linux
+
+# 🌍 Vision
 
 A real Linux desktop in your pocket with out change or move Android.
 Open. Lightweight. Modern. Mobile-first.
