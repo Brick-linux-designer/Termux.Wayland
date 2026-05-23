@@ -1,6 +1,6 @@
 # Termux Wayland (Linux in your pocket, Wayland in your terminal)
 
-## com.termux.wayland
+# com.termux.wayland
 
  Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies.
 Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet.
