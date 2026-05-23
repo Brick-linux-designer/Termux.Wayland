@@ -21,22 +21,24 @@ Preview
 # Architecture
 
 Android
- └── Termux
-      └── Linux Environment (Termux,Alpine Linux,Debian,Ubuntu,Termux,Manjaro, [...] )
-           └── Weston (Wayland compositor)
-                 └── Linux GUI Applications
+   └── Termux
+   |     └── Linux Environment (Termux,Alpine Linux,Debian,Ubuntu,Termux,Manjaro, [...] )
+   |     └── Legacy X11-repo (later Wayland-repo)
+   |          |
+   └── Termux Wayland
+         └── Android Wigets and Linux apps
+         └── Legacy Termux X11 compositor (later Weston (Wayland compositor))
+                └── Linux GUI Applications
 
 # 📦 Included Components
 
 Component	Description
-Termux: Android terminal environment
-Debian,Alpine Linux,Manjaro,Ubuntu,...: Linux userspace
-Widgets,apps,Android PIP windows,Android styled like Ubuntu touch & Android
-Weston:	Reference Wayland compositor
-
-XWayland:	Legacy X11 app compatibility
-PulseAudio / PipeWire	Audio support
-Mesa	OpenGL rendering
+Termux => Android terminal environment
+Termux PRoot => Debian,Alpine Linux,Manjaro,Ubuntu,...: Linux userspace
+Termux Wayland => widgets,apps,Android PIP windows,Android styled like Ubuntu touch & Android
+Termux Wayland => Weston:	Reference Wayland compositor
+Termux Wayland & Termux X11 => XWayland:	Legacy X11 app compatibility
+Termux & Termux Wayland & Termux X11 =>PulseAudio / PipeWire	Audio support Mesa	OpenGL rendering
 
 # 🚀 Goals
 
@@ -64,8 +66,8 @@ Better mobile integration	Desktop-first design
 pkg update && pkg upgrade
 pkg install root-repo x11-repo
 pkg install git
-git clone https://github.com/brick-linux-designer/termux-wayland
-cd termux-wayland
+git clone https://github.com/Brick-linux-designer/Termux.Wayland/
+cd /[chemin]/Termux.Wayland
 
 # 🧩 Planned Features
 
