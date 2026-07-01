@@ -41,7 +41,7 @@ Android
  │
  └── Termux Wayland
       ├── Android Widgets & Linux apps
-      ├── Android PiP windows
+      ├── Android FreeMode windows
       ├── Android styled like Ubuntu Touch & Android
       │
       ├── Legacy Termux:X11 compositor
