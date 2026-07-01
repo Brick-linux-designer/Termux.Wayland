@@ -1,19 +1,19 @@
-# Termux Wayland (Linux in your pocket, Wayland in your terminal)
-
+# Termux Wayland
 # com.termux.wayland
+## Linux in your pocket, Wayland in your terminal
 
- Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies.
-Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet.
+ Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies and Android free mode API.
+Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet, it in Android x86 on compunter.
 
 ---
 
-# ✨ Features
+# Features
 
 - Native Wayland graphical session
 - Lightweight and optimized for mobile devices
 - Real Linux environment with APT
 - Sandboxed
-- No root required
+- No root required, but its better with root
 - Keyboard & mouse support
 - Touchscreen friendly
 - Dynamic window resizing
@@ -23,7 +23,7 @@ Built around Termux, Wayland and Weston, the project aims to provide a lightweig
 
 ---
 
-# 🏗️ Architecture
+# Architecture
 
 ```text
 Android
@@ -51,7 +51,7 @@ Android
 
 ---
 
-# 📦 Included Components
+# Included Components
 
 | Component | Description |
 |---|---|
@@ -65,7 +65,7 @@ Android
 
 ---
 
-# 🚀 Goals
+# Goals
 
 The goal of Termux Wayland is to create:
 
@@ -78,23 +78,16 @@ The goal of Termux Wayland is to create:
 
 ---
 
-# ⚡ Why Wayland?
+# Installation
 
-| Wayland | X11 |
-|---|---|
-| Lower latency | Older architecture |
-| Better rendering pipeline | More overhead |
-| More secure | Legacy design |
-| Better mobile integration | Desktop-first design |
-
----
-
-# 🔧 Installation (WIP)
-
+Downoload the free app from Github.
+On Termux (downoload on: https://github.com/termux/termux-app/releases or  in F-droid https://f-droid.org/en/packages/com.termux or in Google PlayStore for Android 11+):
 ```bash
-pkg update && pkg upgrade
+pkg update && pkg upgrade #chec and install updates
 
-pkg install root-repo x11-repo
+pkg install x11-repo #later wayland-repo
+
+pkg install root-repo #if you are rooted
 
 pkg install git
 
@@ -105,7 +98,7 @@ cd Termux.Wayland
 
 ---
 
-# 🧩 Planned Features
+# Planned Features
 
 - [ ] Full launcher UI
 - [ ] Session manager
@@ -120,7 +113,7 @@ cd Termux.Wayland
 
 ---
 
-# 🤝 Contributing
+# Contributing
 
 Contributions are welcome!
 
@@ -134,17 +127,17 @@ You can help by:
 
 ---
 
-# ⭐ Support The Project
+# Support The Project
 
 If you like the project:
 
-- Give the repository a star ⭐
-- Share it with other Linux / Android enthusiasts
+- Give a star to the repository
+- Share it with other Termux/Linux/Android/Linux phone enthusiasts/fans
 - Contribute to development
 
 ---
 
-# 📜 License
+# License
 
 MIT License
 
@@ -152,20 +145,29 @@ Copyright (c) 2026 Brick-linux-designer
 
 ---
 
-# ❤️ Inspired By
+# Why Wayland?
+
+| Wayland | X11 |
+|---|---|
+| Lower latency | Older architecture |
+| Better rendering pipeline | More overhead |
+| More secure | Legacy design |
+| Better mobile integration | Desktop-first design |
+
+---
+
+# Inspired By
 
 - Termux
 - Termux:X11
 - Ubuntu Touch & Android
-- Ubuntu
 - Wayland
-- Weston
-- Debian
 - Alpine Linux
+- VNC
 
 ---
 
-# 🌍 Vision
+# Vision
 
 A real Linux desktop in your pocket without changing or replacing Android.
 
@@ -173,6 +175,6 @@ Open. Lightweight. Modern. Mobile-first.
 
 ---
 
-# 📌 Status
+# Status
 
 The app and source code will be available soon.
