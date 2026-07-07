@@ -1,0 +1,79 @@
+MIT License
+
+Copyright (c) 2026 Brick-linux-designer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---
+
+LICENCES / ASSET ATTRIBUTIONS
+
+This repository's code is licensed MIT (see above). Individual image assets and
+icons included in this repository may be covered by other licenses. Below are
+per-file attributions and links to the upstream license sources. If a file in
+this repository is a direct copy or a derivative of an upstream asset, the
+license indicated applies to that asset and to any derivative of it.
+
+1) termux-app logo (avatar)
+- Source (upstream repo license reference): https://github.com/termux/termux-app/blob/401bbe54b8f4e68302b1ff70678015a24628fb1d/LICENSE.md
+- Avatar/logo used (upstream image reference): https://avatars.githubusercontent.com/u/8104776?s=200&v=4
+- License: GNU GPL v3 (termux/termux-app declares GPLv3 for the repo)
+- Notes: Treat this image as covered by GPL v3. If you distribute this asset you must comply with the GPLv3 obligations for that file (preserve notices, include license link or text, and provide source or reference to source).
+
+2) Termux X11 ic_launcher (various densities)
+- Example upstream file (XML vector): https://github.com/termux/termux-x11/blob/master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+- Example raster variant (hdpi): https://github.com/termux/termux-x11/blob/master/app/src/main/res/mipmap-hdpi/ic_launcher.png
+- Repo license: https://github.com/termux/termux-x11/blob/master/LICENSE (GNU GPL v3)
+- License: GNU GPL v3
+- Notes: These assets are part of the termux-x11 repository and are covered by GPLv3. If any images in this repo are copied from termux-x11 (for presentation or packaging), include this attribution and respect the GPL requirements for those files.
+
+3) termux-x11 legacy assets containing the X.Org logo
+- Note: the legacy Termux X11 assets include an X.Org (X11) logo in some icons. The X.Org logo is owned by the X.Org Foundation and may be subject to trademark restrictions in addition to any copyright/license on the file that contains it.
+- Action: If you distribute any asset containing the X.Org logo, check X.Org Foundation usage policies and request permission if necessary. A starting point: https://www.x.org/wiki/
+
+4) Local files you mentioned (from termux-x11):
+- 2.jpg, 3.jpg, dpi-scale.png — you stated these come from the same termux-x11 folder. Treat each of these as GPLv3 assets (termux-x11 repo license). Include upstream URL and commit/sha if you can.
+- If you replaced one logo in an asset with a custom "W" (your modified logo), document whether this file is a derivative of a GPL asset or an original. If it is a derivative of a GPL asset, that derivative must be licensed under GPLv3 as well (for the image asset). If it is an original created by you and only "inspired" by termux icons, you may choose its license, but avoid confusion with Termux branding and include a non-affiliation disclaimer.
+
+Recommended files to add to the repository (if not already present):
+- /LICENSES or /LICENSES/NOTICE.md with entries like above (this file serves that purpose)
+- Full text or link to the GPLv3: https://www.gnu.org/licenses/gpl-3.0.html
+- A short README entry or repository README update with a non-affiliation disclaimer:
+    "This project is not affiliated with, sponsored by, or endorsed by the Termux project. Included logos/assets are used under their respective licenses — see LICENCES."
+
+Short actionable summary of what I changed and what I recommend next:
+- I created a new file at the repository root named "LICENCES" containing the MIT license for the code (copied from your existing LICENSE) plus detailed per-asset attributions and links to upstream license sources for the Termux and termux-x11 assets.
+
+What I recommend you do next:
+1) If you want the original LICENSE filename removed or replaced by this new LICENCES file, tell me and I can rename/update via a follow-up commit (I will fetch the current LICENSE blob sha first before modifying it to avoid conflicts).
+2) Add commit/URLs for the exact files you copied from termux-x11 (for example the exact paths and commit OIDs) so that the attribution lines can be precise. If you want, I can search termux-x11 for matching files if you give me the filenames as they appear in your repo.
+3) For any image you cannot find a clear upstream source for, either remove it or replace it with an image whose license is clear (to avoid copyright risk).
+4) If you plan to present your app as an "evolution" of Termux or to approach the Termux project for collaboration, prepare a short issue using the template I drafted earlier and attach the exact files and repository links so the maintainers can review.
+
+My quick thoughts on the rest of the repo and your approach:
+- You're taking the right approach by documenting per-asset licenses and by adding a disclaimer. Many projects mix code and assets under different licenses; the important part is to be explicit per-file.
+- Regarding using logos and branding: while many forks/derivatives exist, trademark owners may still enforce usage rules. Keep branding distinct enough to avoid confusion—use a clear disclaimer on GitHub and app stores.
+- If your modified logo is sufficiently original (not a direct derivative), choose a permissive or clear license for it and document it in LICENCES.
+
+If you'd like, I can now:
+- Update the original LICENSE file (rename to LICENCES by creating LICENCES and removing LICENSE) — I will need confirmation to delete/modify LICENSE and permission to commit.
+- Scan your repository for the exact asset filenames and automatically generate precise attributions (I attempted to list .github/static but got a 404 from the API; if you want, I can try again or you can paste the paths).
+
+What would you like me to do next?
