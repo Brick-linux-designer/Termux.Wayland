@@ -31,7 +31,7 @@ per-file attributions and links to the upstream license sources. If a file in
 this repository is a direct copy or a derivative of an upstream asset, the
 license indicated applies to that asset and to any derivative of it.
 
-1) termux-app logo (avatar)
+1) termux-app logo (also in Termux avatar but with smaller size)
 - Source (upstream repo license reference): https://github.com/termux/termux-app/blob/401bbe54b8f4e68302b1ff70678015a24628fb1d/LICENSE.md
 - Avatar/logo used (upstream image reference): https://avatars.githubusercontent.com/u/8104776?s=200&v=4
 - License: GNU GPL v3 (termux/termux-app declares GPLv3 for the repo)
@@ -48,7 +48,7 @@ license indicated applies to that asset and to any derivative of it.
 - Note: the legacy Termux X11 assets include an X.Org (X11) logo in some icons. The X.Org logo is owned by the X.Org Foundation and may be subject to trademark restrictions in addition to any copyright/license on the file that contains it.
 - Action: If you distribute any asset containing the X.Org logo, check X.Org Foundation usage policies and request permission if necessary. A starting point: https://www.x.org/wiki/
 
-4) Local files you mentioned (from termux-x11):
+4) Local files (from termux-x11):
 - 2.jpg, 3.jpg, dpi-scale.png — you stated these come from the same termux-x11 folder. Treat each of these as GPLv3 assets (termux-x11 repo license). Include upstream URL and commit/sha if you can.
 - If you replaced one logo in an asset with a custom "W" (your modified logo), document whether this file is a derivative of a GPL asset or an original. If it is a derivative of a GPL asset, that derivative must be licensed under GPLv3 as well (for the image asset). If it is an original created by you and only "inspired" by termux icons, you may choose its license, but avoid confusion with Termux branding and include a non-affiliation disclaimer.
 
@@ -66,14 +66,3 @@ What I recommend you do next:
 2) Add commit/URLs for the exact files you copied from termux-x11 (for example the exact paths and commit OIDs) so that the attribution lines can be precise. If you want, I can search termux-x11 for matching files if you give me the filenames as they appear in your repo.
 3) For any image you cannot find a clear upstream source for, either remove it or replace it with an image whose license is clear (to avoid copyright risk).
 4) If you plan to present your app as an "evolution" of Termux or to approach the Termux project for collaboration, prepare a short issue using the template I drafted earlier and attach the exact files and repository links so the maintainers can review.
-
-My quick thoughts on the rest of the repo and your approach:
-- You're taking the right approach by documenting per-asset licenses and by adding a disclaimer. Many projects mix code and assets under different licenses; the important part is to be explicit per-file.
-- Regarding using logos and branding: while many forks/derivatives exist, trademark owners may still enforce usage rules. Keep branding distinct enough to avoid confusion—use a clear disclaimer on GitHub and app stores.
-- If your modified logo is sufficiently original (not a direct derivative), choose a permissive or clear license for it and document it in LICENCES.
-
-If you'd like, I can now:
-- Update the original LICENSE file (rename to LICENCES by creating LICENCES and removing LICENSE) — I will need confirmation to delete/modify LICENSE and permission to commit.
-- Scan your repository for the exact asset filenames and automatically generate precise attributions (I attempted to list .github/static but got a 404 from the API; if you want, I can try again or you can paste the paths).
-
-What would you like me to do next?
