@@ -29,12 +29,13 @@ Built around Termux, Wayland and Weston, the project aims to provide a lightweig
 Android
  ├── Termux
  │    ├── Linux Environment
- │    │     ├── Termux
- │    │     ├── Alpine Linux
- │    │     ├── Debian
- │    │     ├── Ubuntu
- │    │     ├── Manjaro
- │    │     └── [...]
+ │    │     └── Termux App (directly but limited or in PRoot ⤦)
+ |    |          └── PRoot
+ │    │                ├── Alpine
+ │    │                ├── Debian
+ │    │                ├── Ubuntu
+ │    │                ├── Manjaro
+ │    │                └── [...]
  │    │
  │    └── Legacy x11-repo
  │          └── (later Wayland-repo)
@@ -57,7 +58,7 @@ Android
 |---|---|
 | Termux | Android terminal environment |
 | Termux PRoot | Debian, Alpine Linux, Manjaro, Ubuntu... Linux userspace |
-| Termux Wayland | Widgets, apps, Android PiP windows, Android styled like Ubuntu Touch & Android |
+| Termux Wayland | Widgets, apps, Android Free Mode windows, Android styled like Ubuntu Touch & Android |
 | Weston | Reference Wayland compositor |
 | XWayland | Legacy X11 app compatibility |
 | PulseAudio / PipeWire | Audio support |
@@ -69,7 +70,8 @@ Android
 
 The goal of Termux Wayland is to create:
 
-- a modern Linux desktop environment for Android,
+- a modern Linux desktop environment within Android
+- with native support,
 - fully touch compatible,
 - lightweight enough for mobile hardware,
 - easy to install and maintain,
@@ -95,10 +97,11 @@ git clone https://github.com/Brick-linux-designer/Termux.Wayland.git
 
 cd Termux.Wayland
 ```
+And install the last version of APK for your device. In the folder or go to https://github.com/Brick-linux-designer/Termux.Wayland/relases or https://github.com/Brick-linux-designer/Termux.Wayland/packages .
 
 ---
 
-# Planned Features
+# Planned Features (becoming soon)
 
 - [ ] Full launcher UI
 - [ ] Session manager
@@ -143,6 +146,8 @@ MIT License
 
 Copyright (c) 2026 Brick-linux-designer
 
+Copiright (c) 2026 Termux (for the logos & some pictures in /.github/static and the source codes off termux & Termux x11 that I (Brick-linux-designer) will use soon
+
 ---
 
 # Why Wayland?
@@ -153,6 +158,7 @@ Copyright (c) 2026 Brick-linux-designer
 | Better rendering pipeline | More overhead |
 | More secure | Legacy design |
 | Better mobile integration | Desktop-first design |
+| Termux Wayland (now no x11 & no wayland after x11 and after wayland if i have 10 stars & 5contributors | Termux x11 |
 
 ---
 
@@ -162,8 +168,8 @@ Copyright (c) 2026 Brick-linux-designer
 - Termux:X11
 - Ubuntu Touch & Android
 - Wayland
+- Linux Phone
 - Alpine Linux
-- VNC
 
 ---
 
@@ -177,4 +183,4 @@ Open. Lightweight. Modern. Mobile-first.
 
 # Status
 
-The app and source code will be available soon.
+The app and 100% compilable code will be coming soon.
