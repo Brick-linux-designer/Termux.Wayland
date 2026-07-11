@@ -11,17 +11,17 @@ Built around Termux, Wayland and Weston, the project aims to provide a lightweig
 
 # Features
 
-- Native Wayland graphical session
-- Lightweight and optimized for mobile devices
+- Native Wayland graphical session (in future version)
+- Lightweight and very optimized for mobile devices
 - Real Linux environment with APT
 - Sandboxed
-- No root required, but its better with root
-- Keyboard & mouse support
+- No root required, but its can be better with root
+- Keyboard & mouse support (in fure version)
 - Touchscreen friendly
 - Dynamic window resizing
 - Hardware accelerated rendering support
 - Simple app launcher system
-- Modern dark UI inspired by Linux desktops
+- Modern UI inspired by Linux desktops
 
 ---
 
@@ -73,12 +73,12 @@ Android
 The goal of Termux Wayland is to create:
 
 - a modern Linux desktop environment within Android
-- with native support,
+- native support,
 - fully touch compatible,
 - lightweight enough for mobile hardware,
 - easy to install and maintain,
 - developer friendly,
-- open-source and customizable.
+- open-source and very customizable.
 
 ---
 
@@ -89,15 +89,19 @@ On Termux (downoload on: https://github.com/termux/termux-app/releases or  in F-
 ```bash
 pkg update && pkg upgrade #chec and install updates
 
-pkg install x11-repo #later wayland-repo
+pkg install x11-repo #later wayland-repo or just a custom package (by Brick-linux-designer)
 
 pkg install root-repo #if you are rooted
 
 pkg install git
 
+mkdir /data/data/com.termux/files/home/Downolods || cd /data/data/com.termux/files/home/Downolods
+
+cd /data/data/com.termux/files/home/Downolods
+
 git clone https://github.com/Brick-linux-designer/Termux.Wayland.git
 
-cd Termux.Wayland
+cd /data/data/com.termux/files/home/Downolods/Termux.Wayland
 ```
 And install the last version of APK for your device. In the folder or go to https://github.com/Brick-linux-designer/Termux.Wayland/relases .
 
@@ -148,7 +152,7 @@ MIT License
 
 Copyright (c) 2026 Brick-linux-designer
 
-Copiright (c) 2026 Termux (for the logos & some pictures in /.github/static and the source codes off termux & Termux x11 that I (Brick-linux-designer) will use soon
+Copiright (c) 2026 Termux developers (for the logos & some pictures in /.github/static (and the source codes off termux & Termux x11 that I (Brick-linux-designer) will use soon).
 
 ---
 
@@ -167,9 +171,9 @@ Copiright (c) 2026 Termux (for the logos & some pictures in /.github/static and 
 # Inspired By
 
 - Termux
-- Termux:X11
+- Termux x11
+-  Wayland
 - Ubuntu Touch & Android
-- Wayland
 - Linux Phone
 - Alpine Linux
 
@@ -177,7 +181,7 @@ Copiright (c) 2026 Termux (for the logos & some pictures in /.github/static and 
 
 # Vision
 
-A real Linux desktop in your pocket without changing or replacing Android.
+A real Linux desktop on your phone without changing or replacing Android or other distro in Android branch, doesn't exist officialy by Brick-linux-designer on iOS or Windows phone but is compilable on Chrome OS.
 
 Open. Lightweight. Modern. Mobile-first.
 
