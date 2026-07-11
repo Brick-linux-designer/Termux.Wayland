@@ -103,7 +103,7 @@ git clone https://github.com/Brick-linux-designer/Termux.Wayland.git
 
 cd /data/data/com.termux/files/home/Downolods/Termux.Wayland
 ```
-And install the last version of APK for your device. In the folder or go to https://github.com/Brick-linux-designer/Termux.Wayland/relases .
+And install the last version of APK for your device. In the folder or go to https://github.com/Brick-linux-designer/Termux.Wayland/releases .
 
 ---
 
