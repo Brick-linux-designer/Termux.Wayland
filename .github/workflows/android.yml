@@ -2,11 +2,11 @@ name: Android CI
 
 on:
   push:
-    branches: [ "main/kotlin_version" ]
-    branches: [ "main/kotlin_version" ]
+    branches: [ "main/Kotlin_version" ]
+    branches: [ "main/Java_version" ]
   pull_request:
-    branches: [ "main/java_version" ]
-    branches: [ "main/java_version" ]
+    branches: [ "main/Kotlin_version" ]
+    branches: [ "main/Java_version" ]
 
 jobs:
   build:
