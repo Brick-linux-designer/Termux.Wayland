@@ -87,20 +87,16 @@ The goal of Termux Wayland is to create:
 Downoload the free app from Github.
 On Termux (downoload on: https://github.com/termux/termux-app/releases or  in F-droid https://f-droid.org/en/packages/com.termux or in Google PlayStore for Android 11+):
 ```bash
-pkg update && pkg upgrade #chec and install updates
+pkg update && pkg upgrade # chec and install updates
 
 pkg install x11-repo #later wayland-repo or just a custom package (by Brick-linux-designer)
-
 pkg install root-repo #if you are rooted
+pkg install git #install git to clone the repo
 
-pkg install git
-
-mkdir /data/data/com.termux/files/home/Downolods || cd /data/data/com.termux/files/home/Downolods
-
+mkdir /data/data/com.termux/files/home/Downolods || echo The directory Downoloads olready exists
 cd /data/data/com.termux/files/home/Downolods
 
-git clone https://github.com/Brick-linux-designer/Termux.Wayland.git
-
+git clone https://github.com/Brick-linux-designer/Termux.Wayland.git #You maybe have to authentificate if it's the first time you use git comand
 cd /data/data/com.termux/files/home/Downolods/Termux.Wayland
 ```
 And install the last version of APK for your device. In the folder or go to https://github.com/Brick-linux-designer/Termux.Wayland/releases .
