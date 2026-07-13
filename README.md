@@ -5,8 +5,8 @@
 ##### Disclamer: this project is not supported aproved or made by Termux devlopers.
 Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies and Android free mode API.
 Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet, it in Android x86 on compunter.
-#### ⚠️ Warning the code is séparated in two versions Java that is the same language for Ternux & Termux x11 & Kotlin, actualy just Kotlin version work.
-##### Warning only the README.md & the LICENCE files are in English; other files are in French.
+#### ⚠️ Warning the code is séparated in two versions Java that is the same language for Ternux & Termux x11 & Kotlin, actualy just Kotlin version work and have APK.
+##### Warning only the README.md & the LICENCE files are in English; some other files are in French.
 
 ---
 
@@ -186,4 +186,5 @@ Open. Lightweight. Modern. Mobile-first.
 
 # Status
 
-The app and 100% compilable code will be coming soon.
+The Java version app and 100% compilable Java code will be coming soon.
+And the kotlin app will work soon.
