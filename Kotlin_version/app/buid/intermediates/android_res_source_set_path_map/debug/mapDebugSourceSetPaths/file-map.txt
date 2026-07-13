@@ -1,0 +1,8 @@
+com.termux.wayland.app-pngs-0 /home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/build/generated/res/pngs/debug
+com.termux.wayland.app-updated_navigation_xml-1 /home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/build/generated/updated_navigation_xml/debug
+com.termux.wayland.app-packageDebugResources-2 /home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.termux.wayland.app-packageDebugResources-3 /home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.termux.wayland.app-debug-4 /home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.termux.wayland.app-debug-5 /home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/debug/res
+com.termux.wayland.app-main-6 /home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/res
+gradleHome-0 /home/edouard/.gradle

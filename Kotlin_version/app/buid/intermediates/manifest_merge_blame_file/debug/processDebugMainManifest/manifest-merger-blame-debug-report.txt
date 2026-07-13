@@ -1,0 +1,182 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.termux.wayland"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="23"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <permission
+11-->[androidx.core:core:1.19.0] /home/edouard/.gradle/caches/9.4.1/transforms/ca78ccaf9ff1af70fd31d2c8822e3090/transformed/core-1.19.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.termux.wayland.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.19.0] /home/edouard/.gradle/caches/9.4.1/transforms/ca78ccaf9ff1af70fd31d2c8822e3090/transformed/core-1.19.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.19.0] /home/edouard/.gradle/caches/9.4.1/transforms/ca78ccaf9ff1af70fd31d2c8822e3090/transformed/core-1.19.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.termux.wayland.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.19.0] /home/edouard/.gradle/caches/9.4.1/transforms/ca78ccaf9ff1af70fd31d2c8822e3090/transformed/core-1.19.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.19.0] /home/edouard/.gradle/caches/9.4.1/transforms/ca78ccaf9ff1af70fd31d2c8822e3090/transformed/core-1.19.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:5:5-44:19
+18        android:allowBackup="true"
+18-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.19.0] /home/edouard/.gradle/caches/9.4.1/transforms/ca78ccaf9ff1af70fd31d2c8822e3090/transformed/core-1.19.0/AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+22-->INJECTED
+23        android:fullBackupContent="@xml/backup_rules"
+23-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:12:9-35
+28        android:theme="@style/Theme.TermuxWayland" >
+28-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:13:9-51
+29        <activity
+29-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:15:9-23:20
+30            android:name="com.termux.wayland.MainActivity"
+30-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:16:13-41
+31            android:exported="true"
+31-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:17:13-36
+32            android:theme="@style/Theme.TermuxWayland" >
+32-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:18:13-55
+33            <intent-filter>
+33-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:19:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:20:17-69
+34-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:20:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:21:17-77
+36-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <receiver
+40-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:25:9-34:20
+41            android:name="com.termux.wayland.widgets.DockWidget"
+41-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:26:13-47
+42            android:exported="true" >
+42-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:27:13-36
+43            <intent-filter>
+43-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:28:13-30:29
+44                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+44-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:29:17-84
+44-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:29:25-81
+45            </intent-filter>
+46
+47            <meta-data
+47-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:31:13-33:60
+48                android:name="android.appwidget.provider"
+48-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:32:17-58
+49                android:resource="@xml/dock_widget_info" />
+49-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:33:17-57
+50        </receiver>
+51        <receiver
+51-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:36:9-42:20
+52            android:name="com.termux.wayland.widgets.WidgetReceiver"
+52-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:37:13-51
+53            android:exported="false" >
+53-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:38:13-37
+54            <intent-filter>
+54-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:39:13-41:29
+55                <action android:name="com.termux.wayland.ACTION_DOCK_CLICK" />
+55-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:40:17-79
+55-->/home/edouard/Bureau/termux-Wayland-master/Kotlin_version/app/src/main/AndroidManifest.xml:40:25-76
+56            </intent-filter>
+57        </receiver>
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] /home/edouard/.gradle/caches/9.4.1/transforms/a5b14ca928737355bfd39a67c156c5e1/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] /home/edouard/.gradle/caches/9.4.1/transforms/a5b14ca928737355bfd39a67c156c5e1/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+61            android:authorities="com.termux.wayland.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] /home/edouard/.gradle/caches/9.4.1/transforms/a5b14ca928737355bfd39a67c156c5e1/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] /home/edouard/.gradle/caches/9.4.1/transforms/a5b14ca928737355bfd39a67c156c5e1/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] /home/edouard/.gradle/caches/9.4.1/transforms/a5b14ca928737355bfd39a67c156c5e1/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] /home/edouard/.gradle/caches/9.4.1/transforms/a5b14ca928737355bfd39a67c156c5e1/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] /home/edouard/.gradle/caches/9.4.1/transforms/a5b14ca928737355bfd39a67c156c5e1/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/edouard/.gradle/caches/9.4.1/transforms/9d91cda32cceb8ca7285eba30c1a4984/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/edouard/.gradle/caches/9.4.1/transforms/9d91cda32cceb8ca7285eba30c1a4984/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/edouard/.gradle/caches/9.4.1/transforms/9d91cda32cceb8ca7285eba30c1a4984/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+70-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+71                android:value="androidx.startup" />
+71-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+72        </provider>
+73
+74        <uses-library
+74-->[androidx.window:window:1.0.0] /home/edouard/.gradle/caches/9.4.1/transforms/894df34834b1980bcfa8e1a93d6f98eb/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+75            android:name="androidx.window.extensions"
+75-->[androidx.window:window:1.0.0] /home/edouard/.gradle/caches/9.4.1/transforms/894df34834b1980bcfa8e1a93d6f98eb/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+76            android:required="false" />
+76-->[androidx.window:window:1.0.0] /home/edouard/.gradle/caches/9.4.1/transforms/894df34834b1980bcfa8e1a93d6f98eb/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+77        <uses-library
+77-->[androidx.window:window:1.0.0] /home/edouard/.gradle/caches/9.4.1/transforms/894df34834b1980bcfa8e1a93d6f98eb/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+78            android:name="androidx.window.sidecar"
+78-->[androidx.window:window:1.0.0] /home/edouard/.gradle/caches/9.4.1/transforms/894df34834b1980bcfa8e1a93d6f98eb/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+79            android:required="false" />
+79-->[androidx.window:window:1.0.0] /home/edouard/.gradle/caches/9.4.1/transforms/894df34834b1980bcfa8e1a93d6f98eb/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+80
+81        <receiver
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+82            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+83            android:directBootAware="false"
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+84            android:enabled="true"
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+85            android:exported="true"
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+86            android:permission="android.permission.DUMP" >
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+88                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+89            </intent-filter>
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+91                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+92            </intent-filter>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+94                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+97                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/edouard/.gradle/caches/9.4.1/transforms/8701fd699479da4431780d5816bfdb0d/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+98            </intent-filter>
+99        </receiver>
+100    </application>
+101
+102</manifest>
