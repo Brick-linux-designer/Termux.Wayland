@@ -1,0 +1,76 @@
+MIT License
+
+Copyright (c) 2026 Brick-linux-designer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---
+
+LICENSES OF ASSETS & ASSETS ATTRIBUTIONS
+
+This repository's code is licensed under the MIT License (see above). Individual image assets and icons included in this repository may be covered by other licenses. Below are per-file attributions and links to upstream license sources. If a file in this repository is a direct copy or a derivative of an upstream asset, the license indicated applies to that asset and to any derivative of it.
+
+Important license links:
+- GNU GPL v3: https://www.gnu.org/licenses/gpl-3.0.html
+- Termux (termux-app) license reference: https://github.com/termux/termux-app/blob/401bbe54b8f4e68302b1ff70678015a24628fb1d/LICENSE.md
+- Termux X11 repo: https://github.com/termux/termux-x11
+- X.Org Foundation (logo/trademark information): https://www.x.org/wiki/
+
+Assets included in this repository (static/):
+
+1) static/1(ModifiedFromTermux-x11repo).jpg
+- Origin: Modified from an asset in the termux-x11 repository (local edits applied).
+- Upstream reference (termux-x11 example): https://github.com/termux/termux-x11/blob/master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+- License: GNU GPL v3 — https://www.gnu.org/licenses/gpl-3.0.html
+- Notes: This file is a modified version of a termux-x11 asset. Because the upstream asset is GPLv3, this derivative image must be treated as GPLv3. Preserve attribution and comply with GPLv3 when distributing this file.
+
+2) static/2(fromTermux-x11repo).jpg
+- Origin: Copied from the termux-x11 repository (see upstream files for exact match).
+- Upstream examples: https://github.com/termux/termux-x11/blob/master/app/src/main/res/mipmap-hdpi/ic_launcher.png
+- License: GNU GPL v3 — https://www.gnu.org/licenses/gpl-3.0.html
+- Notes: Treat this asset as covered by GPLv3. Include upstream reference when distributing.
+
+3) static/3(fromTermux-x11repo).jpg
+- Origin: Copied from the termux-x11 repository (high-resolution variant).
+- Upstream examples: https://github.com/termux/termux-x11/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+- License: GNU GPL v3 — https://www.gnu.org/licenses/gpl-3.0.html
+- Notes: Treat this asset as covered by GPLv3. Include upstream reference when distributing.
+
+4) /static/Termux_logo.webp
+- Origin: Termux project branding (GitHub avatar/logo). Example: https://avatars.githubusercontent.com/u/8104776?s=200&v=4
+- Repository license reference: https://github.com/termux/termux-app/blob/401bbe54b8f4e68302b1ff70678015a24628fb1d/LICENSE.md
+- License: GNU GPL v3 — https://www.gnu.org/licenses/gpl-3.0.html
+- Notes: Use with attribution and follow GPLv3 obligations. Avoid implying official endorsement by Termux unless you have permission.
+
+5) /static/Termux_x11_logo.png
+- Origin: Termux X11 project assets.
+- Upstream repo: https://github.com/termux/termux-x11
+- License: GNU GPL v3 — https://www.gnu.org/licenses/gpl-3.0.html
+- Notes: Follow GPLv3 obligations for this asset.
+
+6) /static/Termux_x11_legacy_logo.png
+- Origin: Legacy termux-x11 asset that contains the X.Org logo.
+- Note: The X.Org logo is a trademark of the X.Org Foundation.
+- X.Org information: https://www.x.org/wiki/
+
+7) /static/Termux_Wayland_logo.png
+- Origin: Custom logo created by Brick-linux-designer for this project by using Termux logo and it's inspirated by Termux x11.
+
+8) The pictures /static/ChatGPT_Generated_logo.png and /static/Gemini_Generated_logo1.png, static/Gemini_Generated_logo2.png origin: generated assets by AI tools included for design/testing are all three 100% free.
