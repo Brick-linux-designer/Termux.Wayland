@@ -1,0 +1,54 @@
+# Android build files
+build/
+.gradle/
+*.apk
+*.aab
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# Gradle
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Generated files
+gen/
+bin/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kotlin
+*.kexe
+*.exe
+
+# Java
+*.jar
+*.war
+
+# Test coverage
+coverage/
+*.lcov
+
+# Node modules (if using any web framework)
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# Backup files
+*.bak
+*~
+*.orig
