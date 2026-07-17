@@ -2,10 +2,15 @@
     <string name="app_name">Termux Wayland</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="wayland_splash_screen_label">Wayland Splash Screen</string>
+    <string name="manage_packages_label">Manage Packages</string>
+    <string name="settings_label">Settings</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
+    <string name="splash_text">Welcome to Termux Wayland Splash Screen</string>
+    <string name="manage_packages_text">Manage your Linux packages here</string>
+    <string name="settings_text">Configure application settings</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -40,7 +45,7 @@
         gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
         libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
         sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a juste luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
 </resources>
