@@ -1,5 +1,5 @@
 # Termux Wayland
-# com.termux.wayland
+# com.termux.(x)wayland(.kotlin)
 ## Linux in your pocket, Wayland in your terminal
 
 ##### Disclamer: this project is not supported aproved or made by Termux devlopers.
