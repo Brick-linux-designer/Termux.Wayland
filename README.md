@@ -1,27 +1,27 @@
 # Termux XWayland
-# com.termux.(x)wayland(.kotlin)
+# com.termux.wayland(.kotlin)
 ## Linux in your pocket, Wayland in your terminal
 
 ##### Disclamer: this project is not supported aproved or made by Termux devlopers.
 Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies and Android free mode API.
 Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet, it in Android x86 on compunter.
-##### ⚠️ Warning the code is séparated in two versions Java that is the same language for Ternux & Termux x11 & Kotlin, actualy just Kotlin version work and have APK. And only the README.md & the LICENCE files are in English; some other files are in French.
+##### ⚠️ Warning the code is séparated in two versions Java that is the same language for Ternux & Termux x11 & Kotlin that is not updated & no longer supported. And only the README.md & the LICENCE files are 100% in English; other files are only in French or in English & in french.
 
 ---
 
 # Features
 
-- Native Wayland graphical session (in future version)
+- Native Wayland or X11 graphical session
 - Lightweight and very optimized for mobile devices
 - Real Linux environment with APT
 - Sandboxed
-- No root required, but its can be better with root
+- No root required, but it can be better with root
 - Keyboard & mouse support (in fure version)
 - Touchscreen friendly
 - Dynamic window resizing
 - Hardware accelerated rendering support
 - Simple app launcher system
-- Modern UI inspired by Linux desktops
+- Modern UI inspired by actual Linux desktops
 
 ---
 
@@ -60,9 +60,9 @@ Android
 |---|---|
 | Termux | Android terminal environment |
 | Termux PRoot | Debian, Alpine Linux, Manjaro, Ubuntu... Linux userspace |
-| Termux Wayland | Widgets, apps, Android Free Mode windows, Android styled like Ubuntu Touch & Android |
+| Termux Wayland | Widgets, apps, Android Free Form windows, Android styled like Pure Linux Phone |
 | Weston | Reference Wayland compositor |
-| XWayland | Legacy X11 app compatibility |
+| XWayland | Legacy X11 compatibility |
 | PulseAudio / PipeWire | Audio support |
 | Mesa | OpenGL rendering |
 
@@ -84,8 +84,8 @@ The goal of Termux Wayland is to create:
 
 # Installation
 
-Downoload the free app from Github.
-On Termux (downoload on: https://github.com/termux/termux-app/releases or  in F-droid https://f-droid.org/en/packages/com.termux or in Google PlayStore for Android 11+):
+Downoload the free Termux app from Github.
+(downoload on: https://github.com/termux/termux-app/releases or  in F-droid https://f-droid.org/en/packages/com.termux or in Google PlayStore for Android 11+):
 ```bash
 pkg update && pkg upgrade # chec and install updates
 
@@ -113,7 +113,7 @@ And install the last version of APK for your device. In the folder or go to http
 - [ ] Backup & restore
 - [ ] Wayland gestures
 - [ ] Containerized environments
-- [ ] XFCE / KDE support
+- [ ] XFCE / KDE / MATE / LXDE / Cinnamon support 
 - [ ] Automatic setup scripts
 
 ---
