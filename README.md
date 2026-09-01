@@ -1,4 +1,4 @@
-# Termux Wayland
+# Termux XWayland
 # com.termux.(x)wayland(.kotlin)
 ## Linux in your pocket, Wayland in your terminal
 
