@@ -1,0 +1,36 @@
+# On Termux / Sur Termux
+
+## =================================================================
+## This file is hear to help you to install softwares on Termux & PRoot on Termux.
+## Ce fichier est ici pour vous aider à installer des logiciels sur Termux & PRoot sur Termux.
+## =================================================================
+
+#### to update termux, install & run a termux gui app for example firefox natively with termux
+
+pkg install firefox
+
+#### pour voir les distros nativement installables via proot-distro
+#### to see natively instalables distibutions with proot-distro 
+proot-distro list
+
+#### pour installer une disto sur proot distro
+proot-distro install [nom-de-la-distro] #exemple Debian
+proot-distro install debian
+
+#### pour lancer la distro en CLI (Command Line Interface)
+proot-distro login <nom-de-la-distro>
+
+#### pour la lancer sur Termux x11 ou Termux Wayland
+#### to run it on Termux x11 or Termux Wayland
+export DISPLAY=:1
+termux-x11 :1 &
+#### in futur to run with this Termux Wayland App you could have to run "termux-wayland :1 &"
+#### dans le futur pour utiliser avec cette App Termux Wayland vous devrez 
+#### peut-être utiliser "termux-wayland :1 &"
+proot-distro login debian --env DISPLAY=:1 --env PULSE_SERVER=127.0.0.1 -- startxfce4
+
+#### to run the distro in a VNC
+#### pour la lancer sur un VNC
+export DISPLAY=:1
+trigger-vnc :1 &
+proot-distro login debian --env DISPLAY=:1 --env PULSE_SERVER=127.0.0.1 -- startxfce4

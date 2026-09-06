@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+        Expose files/public/ (system + user) via content://<authority>/public/...
+        Correspond a context.getFilesDir()/scripts sur le disque.
+    -->
+    <files-path
+        name="termux-wayland-public"
+        path="public/" />
+</paths>
