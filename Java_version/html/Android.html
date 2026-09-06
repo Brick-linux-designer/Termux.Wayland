@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Android</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,.10), rgba(0,0,0,.30)),
+        url("./wallpaper.png") center center / cover no-repeat;
+      position: relative;
+      user-select: none;
+    }
+
+
+    /* Tiroir de notifications */
+    .notification-drawer {
+      position: fixed;
+      z-index: 20;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: min(72vh, 620px);
+      padding: max(12px, env(safe-area-inset-top)) 22px 28px;
+      background: rgba(20, 24, 27, .94);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: 0 0 24px 24px;
+      box-shadow: 0 12px 35px rgba(0,0,0,.38);
+      transform: translateY(-105%);
+      transition: transform .28s cubic-bezier(.2,.8,.2,1);
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+    }
+
+    .notification-drawer.open {
+      transform: translateY(0);
+    }
+
+    .drawer-handle {
+      width: 42px;
+      height: 4px;
+      margin: 4px auto 18px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.42);
+    }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 15px;
+    }
+
+    .drawer-header > span:first-child {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .drawer-title {
+      flex: 1;
+      opacity: .7;
+    }
+
+    .close-drawer {
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255,255,255,.10);
+      color: #fff;
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .notification-empty {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: rgba(255,255,255,.58);
+      font-size: 15px;
+    }
+
+    .empty-icon {
+      width: 58px;
+      height: 58px;
+      border: 2px solid rgba(255,255,255,.35);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 27px;
+    }
+
+    .notification-zone {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 34px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .notification-zone.hidden {
+      display: none;
+    }
+
+    .drawer-open .content,
+    .drawer-open .navigation {
+      filter: brightness(.72);
+      transition: filter .28s ease;
+    }
+
+    /* Zone centrale */
+    .content {
+      position: absolute;
+      inset: 0 0 76px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      padding-bottom: 4vh;
+      text-align: center;
+    }
+
+    /* Cadran */
+    .clock {
+      width: min(48vw, 250px);
+      height: min(48vw, 250px);
+      min-width: 170px;
+      min-height: 170px;
+      border: 3px solid rgba(255,255,255,.85);
+      border-radius: 50%;
+      position: relative;
+      background: rgba(0,0,0,.22);
+      box-shadow:
+        0 0 30px rgba(0,0,0,.35),
+        inset 0 0 20px rgba(0,0,0,.18);
+      backdrop-filter: blur(3px);
+    }
+
+    .clock::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 50%;
+    }
+
+    .tick {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 2px;
+      height: 9px;
+      background: rgba(255,255,255,.72);
+      transform-origin: 50% calc(min(24vw, 122px) - 2px);
+      transform: translate(-50%, -50%) rotate(var(--angle));
+      border-radius: 2px;
+    }
+
+    .tick.major {
+      width: 3px;
+      height: 13px;
+      background: #fff;
+    }
+
+    .hand {
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      transform-origin: 50% 100%;
+      transform: translateX(-50%) rotate(0deg);
+      border-radius: 4px;
+      z-index: 3;
+    }
+
+    .hour {
+      width: 6px;
+      height: 27%;
+      background: #fff;
+    }
+
+    .minute {
+      width: 4px;
+      height: 36%;
+      background: #fff;
+    }
+
+    .second {
+      width: 2px;
+      height: 39%;
+      background: #ddd;
+    }
+
+    .center-dot {
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: #fff;
+      z-index: 5;
+      box-shadow: 0 0 8px rgba(0,0,0,.35);
+    }
+
+    .digital {
+      position: absolute;
+      left: 50%;
+      top: 61%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(20px, 5vw, 30px);
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,.55);
+      white-space: nowrap;
+    }
+
+    /* Icône + nom */
+    .app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .app img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      border-radius: 16px;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,.45));
+    }
+
+    .app-name {
+      font-size: 17px;
+      font-weight: 500;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,.75);
+    }
+
+    /* Barre de navigation façon Android */
+    .navigation {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 76px;
+      padding: 0 9%;
+      padding-bottom: env(safe-area-inset-bottom);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, .12);
+    }
+
+    .nav-button {
+      width: 52px;
+      height: 52px;
+      border: 0;
+      outline: 0;
+      padding: 0;
+      background: transparent;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .back-icon {
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-right: 20px solid #fff;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+    }
+
+    .home-icon {
+      width: 23px;
+      height: 23px;
+      background: #fff;
+      border-radius: 50%;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+    }
+
+    .recent-icon {
+      width: 21px;
+      height: 21px;
+      background: #fff;
+      border-radius: 3px;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,.25));
+    }
+
+    .nav-button:active {
+      transform: scale(.88);
+    }
+
+    @media (max-height: 650px) {
+      .content { gap: 10px; }
+      .clock {
+        width: 185px;
+        height: 185px;
+        min-width: 185px;
+        min-height: 185px;
+      }
+      .app img { width: 55px; height: 55px; }
+      .app-name { font-size: 15px; }
+      .navigation { height: 62px; }
+      .content { inset-bottom: 62px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tiroir de notifications vide -->
+  <section class="notification-drawer" id="notificationDrawer" aria-label="Tiroir de notifications">
+    <div class="drawer-handle"></div>
+    <div class="drawer-header">
+      <span id="drawerTime">00:00</span>
+      <span class="drawer-title">Notifications</span>
+      <button class="close-drawer" id="closeDrawer" aria-label="Fermer">×</button>
+    </div>
+    <div class="notification-empty">
+      <div class="empty-icon">✓</div>
+      <div>Aucune notification</div>
+    </div>
+  </section>
+
+  <button class="notification-zone" id="notificationZone"
+          aria-label="Ouvrir le tiroir de notifications"></button>
+
+  <main class="content">
+    <div class="clock" id="clock">
+      <!-- graduations -->
+      <span class="tick major" style="--angle:0deg"></span>
+      <span class="tick" style="--angle:30deg"></span>
+      <span class="tick" style="--angle:60deg"></span>
+      <span class="tick major" style="--angle:90deg"></span>
+      <span class="tick" style="--angle:120deg"></span>
+      <span class="tick" style="--angle:150deg"></span>
+      <span class="tick major" style="--angle:180deg"></span>
+      <span class="tick" style="--angle:210deg"></span>
+      <span class="tick" style="--angle:240deg"></span>
+      <span class="tick major" style="--angle:270deg"></span>
+      <span class="tick" style="--angle:300deg"></span>
+      <span class="tick" style="--angle:330deg"></span>
+
+      <div class="hand hour" id="hourHand"></div>
+      <div class="hand minute" id="minuteHand"></div>
+      <div class="hand second" id="secondHand"></div>
+      <div class="center-dot"></div>
+      <div class="digital" id="digital">00:00:00</div>
+    </div>
+
+    <div class="app">
+      <img src="./src/main/mipmap-hdpi/ic_launcher_round.webp"
+           alt="Icône Termux XWayland"
+           onerror="this.style.opacity='.25'">
+      <div class="app-name">Termux XWayland</div>
+    </div>
+  </main>
+
+  <nav class="navigation" aria-label="Navigation système">
+    <button class="nav-button" aria-label="Retour" onclick="history.back()">
+      <span class="back-icon"></span>
+    </button>
+
+    <button class="nav-button" aria-label="Accueil" onclick="location.href='/'">
+      <span class="home-icon"></span>
+    </button>
+
+    <button class="nav-button" aria-label="Applications récentes" onclick="alert('Applications récentes')">
+      <span class="recent-icon"></span>
+    </button>
+  </nav>
+
+  <script>
+
+    const drawer = document.getElementById("notificationDrawer");
+    const notificationZone = document.getElementById("notificationZone");
+    const closeDrawer = document.getElementById("closeDrawer");
+    const drawerTime = document.getElementById("drawerTime");
+
+    function setDrawer(open) {
+      drawer.classList.toggle("open", open);
+      document.body.classList.toggle("drawer-open", open);
+      notificationZone.classList.toggle("hidden", open);
+    }
+
+    notificationZone.addEventListener("click", () => setDrawer(true));
+    closeDrawer.addEventListener("click", () => setDrawer(false));
+
+    // Ouverture par glissement depuis le haut
+    let touchStartY = null;
+
+    document.addEventListener("touchstart", (e) => {
+      if (e.touches.length === 1) touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    document.addEventListener("touchend", (e) => {
+      if (touchStartY === null || e.changedTouches.length !== 1) return;
+      const delta = e.changedTouches[0].clientY - touchStartY;
+
+      if (!drawer.classList.contains("open") && touchStartY < 70 && delta > 70) {
+        setDrawer(true);
+      } else if (drawer.classList.contains("open") && delta < -70) {
+        setDrawer(false);
+      }
+      touchStartY = null;
+    }, { passive: true });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") setDrawer(false);
+    });
+
+    function updateClock() {
+      const now = new Date();
+
+      const h = now.getHours();
+      const m = now.getMinutes();
+      const s = now.getSeconds();
+      const ms = now.getMilliseconds();
+
+      const timeText = [h, m, s].map(v => String(v).padStart(2, "0")).join(":");
+      document.getElementById("digital").textContent = timeText;
+      drawerTime.textContent = timeText.slice(0, 5);
+
+      const secondAngle = (s + ms / 1000) * 6;
+      const minuteAngle = (m + s / 60) * 6;
+      const hourAngle = ((h % 12) + m / 60 + s / 3600) * 30;
+
+      document.getElementById("secondHand").style.transform =
+        `translateX(-50%) rotate(${secondAngle}deg)`;
+      document.getElementById("minuteHand").style.transform =
+        `translateX(-50%) rotate(${minuteAngle}deg)`;
+      document.getElementById("hourHand").style.transform =
+        `translateX(-50%) rotate(${hourAngle}deg)`;
+    }
+
+    updateClock();
+    setInterval(updateClock, 50);
+  </script>
+</body>
+</html>
