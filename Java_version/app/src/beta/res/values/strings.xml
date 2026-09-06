@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Termux XWayland Bêta</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+
+    <!-- Navigation fragments -->
+    <string name="wayland_splash_screen_label">Wayland Splash Screen</string>
+    <string name="manage_packages_label">Manage Packages</string>
+    <string name="settings_label">Settings</string>
+    <string name="launcher_label">Linux Apps</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Splash -->
+    <string name="splash_text">Welcome to Termux XWayland Bêta</string>
+    <string name="splash_subtitle">Linux apps on Android, no root required.</string>
+    <string name="btn_open_launcher">Open Launcher</string>
+
+    <!-- Launcher -->
+    <string name="manage_packages_text">Installed Linux applications</string>
+    <string name="launcher_empty">No Linux apps found.\nInstall packages via Termux\nor run install-gui-apps.sh</string>
+    <string name="launcher_loading">Scanning installed apps…</string>
+    <string name="launcher_error">Error loading apps. Is Termux installed?</string>
+    <string name="launch_app">Launch</string>
+    <string name="app_not_installed">Package not installed</string>
+
+    <!-- Scripts -->
+    <string name="scripts_ready">Scripts ready in files/scripts/</string>
+    <string name="run_setup_x11">Run setup-x11.sh</string>
+    <string name="run_install_apps">Run install-gui-apps.sh</string>
+    <string name="open_scripts_folder">Open scripts folder</string>
+
+    <!-- Settings -->
+    <string name="settings_text">Configure application settings</string>
+    <string name="pref_display_num">X11 Display number</string>
+    <string name="pref_display_num_default">1</string>
+    <string name="pref_show_all_apps">Show uninstalled apps</string>
+</resources>
