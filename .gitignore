@@ -1,54 +1,34 @@
-# Android build files
-build/
-.gradle/
-*.apk
-*.aab
-*.class
+# Global Android/IntelliJ ignores
+**/.idea/
+**/*.iml
+**/.DS_Store
+**/.gradle/
+**/build/
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+**/local.properties
 
-# IDE
-.idea/
-.vscode/
-*.iml
-*.swp
-*.swo
+# Secrets & Signing
+**/*.jks
+**/*.p12
+**/*.keystore
+**/google-services.json
 
-# Gradle
-.gradle
-gradle-app.setting
-!gradle-wrapper.jar
-.gradletasknamecache
+# Built artifacts
+**/*.apk
+**/*.aar
+**/*.bundle
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Local specific
+/local.properties
+/.idea/
+/build/
 
-# Generated files
-gen/
-bin/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Kotlin
-*.kexe
-*.exe
-
-# Java
-*.jar
-*.war
-
-# Test coverage
-coverage/
-*.lcov
-
-# Node modules (if using any web framework)
-node_modules/
-
-# Environment
-.env
-.env.local
-
-# Backup files
-*.bak
-*~
-*.orig
+# Local files and folders
+/a-other-gits
+/tree.md
+/APKs
+/.idea
+/termux-x11-master
+/.project
