@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--
+        Expose data/data/com.termux.wayland.beta/files/scripts/
+        Accessible depuis n'importe quelle app via FileProvider.
+        URI : content://com.termux.wayland.beta.fileprovider/scripts/...
+    -->
+    <files-path
+        name="scripts"
+        path="scripts/" />
+</paths>
