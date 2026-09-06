@@ -1,11 +1,11 @@
 # Termux XWayland
-# com.termux.wayland(.kotlin)
-## Linux in your pocket, Wayland in your terminal
+### com.termux.wayland(.kotlin/.beta/.kotlin.beta)
+### Linux in your pocket, Wayland in your terminal
 
-##### Disclamer: this project is not supported aproved or made by Termux devlopers.
+#### Disclamer: this project is not supported aproved or made by Termux devlopers.
 Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies and Android free mode API.
 Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet, it in Android x86 on compunter.
-##### ⚠️ Warning the code is séparated in two versions Java that is the same language for Ternux & Termux x11 & Kotlin that is not updated & no longer supported. And only the README.md & the LICENCE files are 100% in English; other files are only in French or in English & in french.
+##### ⚠️ Warning the code is séparated in two versions Java that is up to date & the same language for Ternux & Termux x11 & Kotlin that is not updated & no longer supported. And only the README.md & the LICENCE files are 100% in English; other files are only in French or in English & in french.
 
 ---
 
@@ -16,12 +16,12 @@ Built around Termux, Wayland and Weston, the project aims to provide a lightweig
 - Real Linux environment with APT
 - Sandboxed
 - No root required, but it can be better with root
-- Keyboard & mouse support (in fure version)
 - Touchscreen friendly
+- Keyboard & mouse support if your Android support
 - Dynamic window resizing
 - Hardware accelerated rendering support
 - Simple app launcher system
-- Modern UI inspired by actual Linux desktops
+- Modern UI inspired by Linux Phone & actual Linux desktops
 
 ---
 
@@ -113,7 +113,7 @@ And install the last version of APK for your device. In the folder or go to http
 - [ ] Backup & restore
 - [ ] Wayland gestures
 - [ ] Containerized environments
-- [ ] XFCE / KDE / MATE / LXDE / Cinnamon support 
+- [ ] XFCE4 / KDE Plasma / MATE / LXDE / LXQt / Cinnamon support 
 - [ ] Automatic setup scripts
 
 ---
@@ -144,12 +144,21 @@ If you like the project:
 
 # License
 
-MIT License
+## GNU GENERAL PUBLIC LICENSE v3
 
-Copyright (c) 2026 Brick-linux-designer
+Version 3, 29 June 2007
+Copyright © 2007 Free Software Foundation, Inc.
+https://www.fsf.org/
 
-Copiright (c) 2026 Termux developers (for the logos & some pictures in /.github/static (and the source codes off termux & Termux x11 that I (Brick-linux-designer) will use soon).
+Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
 
+[The complete GPLv3 license text is available from the official GNU website.]
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+## GPL v3
+Copiright (c) 2026 Termux developers (for the logos & some pictures (and the source codes off termux & Termux x11 that I (Brick-linux-designer) will use soon).
+
+Copiright (c) 2026 Termux developers (
 ---
 
 # Why Wayland?
@@ -160,7 +169,7 @@ Copiright (c) 2026 Termux developers (for the logos & some pictures in /.github/
 | Better rendering pipeline | More overhead |
 | More secure | Legacy design |
 | Better mobile integration | Desktop-first design |
-| Termux Wayland (now no x11 & no wayland after x11 and after wayland if i have 10 stars & 5contributors | Termux x11 |
+| Termux Wayland (now no x11 & no wayland after x11 and after wayland if i have 7 stars | Termux x11 |
 
 ---
 
@@ -168,7 +177,7 @@ Copiright (c) 2026 Termux developers (for the logos & some pictures in /.github/
 
 - Termux
 - Termux x11
--  Wayland
+- Wayland
 - Ubuntu Touch & Android
 - Linux Phone
 - Alpine Linux
@@ -177,13 +186,13 @@ Copiright (c) 2026 Termux developers (for the logos & some pictures in /.github/
 
 # Vision
 
-A real Linux desktop on your phone without changing or replacing Android or other distro in Android branch, doesn't exist officialy by Brick-linux-designer on iOS or Windows phone but is compilable on Chrome OS.
+A real Linux desktop on your phone without changing or replacing Android or other distro in Android branch
+Open. Lightweight. Modern. Mobile & Linux-first.
 
-Open. Lightweight. Modern. Mobile-first.
+Doesn't exist officialy by Brick-linux-designer on iOS or Windows phone but is compilable on Chrome OS.
 
 ---
 
 # Status
 
-The Java version app and 100% compilable Java code will be coming soon.
-And the kotlin app will work soon.
+The Kotlin version is at end of support & the Java version will work & integrate Termux:x11 source code soon.
