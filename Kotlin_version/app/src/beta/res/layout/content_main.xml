@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashlogowiew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:visibility="visible">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
+
+    <Button
+        android:id="@+id/buttonpreferencies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferences"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="504dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="566dp"
+        tools:text="Help"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="637dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/textnotconnected"
+        android:layout_width="139dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Not connected"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="453dp"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

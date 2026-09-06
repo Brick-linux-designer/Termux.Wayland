@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ManagePackages">
+
+    <fragment
+        android:id="@+id/ManagePackages"
+        android:name="com.termux.wayland.kotlin.beta.ManagePackages"
+        android:label="@string/manage_packages_label"
+        tools:layout="@layout/fragment_second" />
+
+    <fragment
+        android:id="@+id/action_settings"
+        android:name="com.termux.wayland.kotlin.beta.SettingsFragment"
+        android:label="@string/settings_label"
+        tools:layout="@layout/fragment_first" />
+
+</navigation>
