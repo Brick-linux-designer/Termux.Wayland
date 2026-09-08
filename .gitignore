@@ -1,34 +1,59 @@
-# Global Android/IntelliJ ignores
+# Global ignores for Android/Gradle projects
 **/.idea/
-**/*.iml
-**/.DS_Store
 **/.gradle/
 **/build/
 **/captures/
 **/.externalNativeBuild/
 **/.cxx/
-**/local.properties
 
-# Secrets & Signing
+# IDE
+**/*.iml
+**/.DS_Store
+**/.vscode/
+**/*.swp
+**/*.swo
+**/._*
+
+# Local properties & secrets
+**/local.properties
 **/*.jks
 **/*.p12
 **/*.keystore
 **/google-services.json
 
-# Built artifacts
+# Build artifacts
 **/*.apk
 **/*.aar
 **/*.bundle
+**/*.so
 
-# Local specific
-/local.properties
-/.idea/
-/build/
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
 
-# Local files and folders
+# Temporary files
+**/AndroidManifest*(*).xml
+**/*(*).xml
+**/*(*).sh
+**/*(*).properties
+**/*(*).gradle
+
+# Local paths
 /a-other-gits
 /tree.md
 /APKs
-/.idea
 /termux-x11-master
 /.project
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Backup files
+**/*~
+**/*.bak
+**/*.tmp
