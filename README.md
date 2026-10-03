@@ -7,6 +7,8 @@ Termux Wayland brings a complete Linux graphical environment to Android using mo
 Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet, it in Android x86 on compunter.
 ##### ⚠️ Warning the original code at https://github.com/Brick-linux-designer/Termux.Wayland/ is séparated in two versions Java that is up to date & the same language for Ternux & Termux x11 & Kotlin that is not updated & no longer supported. And only the README.md & the LICENCE files are 100% in English; other files are only in French or in English & in french, and https://github.com/cakroni1580/Termux.Wayland is a fork it' s not him maitain this original repo at https://github.com/Brick-linux-designer/Termux.Wayland/ .
 
+[<img alt="Get it on GitHub" src="https://raw.githubusercontent.com/Kunzisoft/Github-badge/main/get-it-on-github.png" width="240">](https://github.com/Brick-linux-designer/Termux.Wayland/releases)
+
 ---
 
 # Features
@@ -175,8 +177,8 @@ Copiright (c) 2026 Termux developers (
 
 # Inspired By
 
-- Termux
 - Termux x11
+- Termux
 - Wayland
 - Ubuntu Touch & Android
 - Linux Phone
