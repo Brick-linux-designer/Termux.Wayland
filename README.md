@@ -207,6 +207,7 @@ Copiright (c) 2026 Termux developers (
 - Ubuntu Touch & Android
 - Linux Phone
 - Alpine Linux
+- PostmarketOS
 
 ---
 
