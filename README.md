@@ -1,11 +1,11 @@
-# Termux XWayland
+# Termux XWayland (Bêta)
 ### com.termux.wayland(.kotlin/.beta/.kotlin.beta)
 ### Linux in your pocket, Wayland in your terminal
 
 #### Disclamer: this project is not supported aproved or made by Termux devlopers.
 Termux Wayland brings a complete Linux graphical environment to Android using modern Wayland technologies and Android free mode API.
 Built around Termux, Wayland and Weston, the project aims to provide a lightweight, fast and flexible desktop experience directly on your phone or tablet, it in Android x86 on compunter.
-##### ⚠️ Warning the original code at https://github.com/Brick-linux-designer/Termux.Wayland/ is séparated in two versions Java that is up to date & the same language for Ternux & Termux x11 & Kotlin that is not updated & no longer supported. And only the README.md & the LICENCE files are 100% in English; other files are only in French or in English & in french, and https://github.com/cakroni1580/Termux.Wayland is a fork it' s not him maitain this original repo at https://github.com/Brick-linux-designer/Termux.Wayland/ .
+##### ⚠️ Warning the original code at https://github.com/Brick-linux-designer/Termux.Wayland/ is séparated in two versions Java that is up to date & the same language for Ternux & Termux x11 & Kotlin that is not updated & not supported. And only the README.md & the LICENCE files are 100% in English; other files are only in French or in English & in french, and https://github.com/cakroni1580/Termux.Wayland is a fork it' s not him maitain this original repo at https://github.com/Brick-linux-designer/Termux.Wayland/ .
 
 [<img alt="Get it on GitHub" src="https://raw.githubusercontent.com/Kunzisoft/Github-badge/main/get-it-on-github.png" width="240">](https://github.com/Brick-linux-designer/Termux.Wayland/releases)
 
@@ -16,7 +16,6 @@ Built around Termux, Wayland and Weston, the project aims to provide a lightweig
 - Native Wayland or X11 graphical session
 - Lightweight and very optimized for mobile devices
 - Real Linux environment with APT
-- Sandboxed
 - No root required, but it can be better with root
 - Touchscreen friendly
 - Keyboard & mouse support if your Android support
@@ -112,11 +111,11 @@ And install the last version of APK for your device. In the folder or go to http
 - [ ] Multi-window support
 - [ ] GPU acceleration improvements
 - [ ] Integrated app store
-- [ ] Backup & restore
 - [ ] Wayland gestures
 - [ ] Containerized environments
 - [ ] XFCE4 / KDE Plasma / MATE / LXDE / LXQt / Cinnamon support 
 - [ ] Automatic setup scripts
+- [ ] Backup & restore
 
 ---
 
@@ -163,15 +162,40 @@ Copiright (c) 2026 Termux developers (for the logos & some pictures (and the sou
 Copiright (c) 2026 Termux developers (
 ---
 
-# Why Wayland?
-
 | Wayland | X11 |
 |---|---|
-| Lower latency | Older architecture |
-| Better rendering pipeline | More overhead |
-| More secure | Legacy design |
-| Better mobile integration | Desktop-first design |
-| Termux Wayland (now no x11 & no wayland after x11 and after wayland if i have 7 stars | Termux x11 |
+| Architecture moderne | Architecture historique |
+| Latence potentiellement plus faible | Latence variable |
+| Pipeline de rendu plus direct | Architecture avec davantage de couches |
+| Meilleure isolation des applications | Isolation plus limitée par défaut |
+| Conçu pour remplacer X11 | Ancien système d'affichage |
+| Meilleure gestion du HiDPI selon l'environnement | HiDPI parfois moins uniforme |
+| Gestion moderne du tactile selon le compositeur | Tactile dépendant des outils |
+| Utilise un compositeur Wayland | Utilise un serveur X11 |
+| Compatible avec XWayland | Compatible avec de nombreuses applications anciennes |
+| Compatibilité variable selon les applications | Large compatibilité logicielle |
+| Termux : nécessite un compositeur Wayland adapté | Termux:X11 fournit un serveur X11 |
+| Configuration variable | Configuration souvent plus simple |
+| Performances variables selon le GPU et le rendu | Performances variables selon le GPU et le rendu |
+| Adapté aux environnements modernes | Adapté aux bureaux Linux classiques |
+
+---
+
+| Termux:X11 | Termux:Wayland |
+|---|---|
+| Utilise le protocole X11 | Utilise le protocole Wayland |
+| Serveur X11 pour Android | Compositeur Wayland compatible avec Android |
+| Compatible avec XFCE et LXQt | Compatible avec les environnements Wayland adaptés |
+| Large compatibilité avec les applications X11 | Nécessite des applications Wayland ou XWayland |
+| Configuration généralement simple | Configuration variable selon le compositeur |
+| Bonne compatibilité avec les bureaux Linux classiques | Adapté aux bureaux Linux modernes |
+| Peut avoir davantage de surcharge selon le rendu | Peut avoir moins de surcharge selon le rendu |
+| Performances dépendantes du GPU et du rendu | Performances dépendantes du GPU et du rendu |
+| Prise en charge des applications X11 | Prise en charge des applications Wayland |
+| Idéal pour faire tourner XFCE dans Termux | Idéal pour expérimenter avec Wayland dans Termux |
+| Application Android : Termux:X11 | Nécessite une solution Wayland adaptée |
+| Maturité et documentation importantes | Configuration plus dépendante de la solution utilisée |
+| Recommandé pour un bureau Linux stable et pratique | Recommandé pour tester un environnement Wayland |
 
 ---
 
