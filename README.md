@@ -159,8 +159,11 @@ https://www.gnu.org/licenses/gpl-3.0.txt
 ## GPL v3
 Copiright (c) 2026 Termux developers (for the logos & some pictures (and the source codes off termux & Termux x11 that I (Brick-linux-designer) will use soon).
 
-Copiright (c) 2026 Termux developers (
+Copiright (c) 2026 Termux developers
+
 ---
+
+# Wayland vs x11 
 
 | Wayland | X11 |
 |---|---|
