@@ -1,4 +1,4 @@
-# Termux XWayland (Bêta)
+# Termux XWayland (Bêta) Warning in this project v1 = v0 in normal projects
 ### com.termux.wayland(.kotlin/.beta/.kotlin.beta)
 ### Linux in your pocket, Wayland in your terminal
 
