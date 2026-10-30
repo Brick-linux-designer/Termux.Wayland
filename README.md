@@ -1,4 +1,5 @@
 # Termux XWayland
+## This repository is outdated but a fork of https://github.com/Brick-linux-designer/Termux.Wayland .
 # com.termux.(x)wayland(.kotlin)
 ## Linux in your pocket, Wayland in your terminal
 
