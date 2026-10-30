@@ -32,7 +32,7 @@ Built around Termux, Wayland and Weston, the project aims to provide a lightweig
 Android
  ├── Termux
  │    ├── Linux Environment
- │    │     └── Termux App (directly but limited or in PRoot ⤦)
+ │    │     └── Termux App (directly but limited or in PRoot distro ⤦)
  |    |          └── PRoot
  │    │                ├── Alpine
  │    │                ├── Debian
